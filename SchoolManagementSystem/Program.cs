@@ -18,7 +18,7 @@ namespace SchoolManagementSystem
            
             SchoolSystem.FillStudentList(students);
             SchoolSystem.FillTeacherList(teachers);
-            SchoolSystem.FillSubjectList(subjects);
+            SchoolSystem.FillSubjectList(subjects, teachers);
 
             SchoolSystem.DisplayStudentList(students);
             SchoolSystem.DisplayTeacherList(teachers);

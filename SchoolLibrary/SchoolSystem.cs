@@ -20,10 +20,10 @@ namespace SchoolLibrary
             teachers.Add(new Teacher { Name = "Ms. Jones", ClassAndSection = "10B" });
         }
 
-        public static void FillSubjectList(List<Subject> subjects)
+        public static void FillSubjectList(List<Subject> subjects, List<Teacher> teachers)
         {
-            subjects.Add(new Subject { Name = "Math", SubjectCode = "MATH101", Teacher = new Teacher{ Name = "Mr. Smith"}});
-            subjects.Add(new Subject { Name = "Science", SubjectCode = "SCI101", Teacher = new Teacher { Name = "Ms. Jones" }});
+            subjects.Add(new Subject { Name = "Math", SubjectCode = "MATH101", Teacher = teachers.First()});
+            subjects.Add(new Subject { Name = "Science", SubjectCode = "SCI101", Teacher = teachers.Last()});
         }
 
         public static void DisplayStudentList(List<Student> students)
